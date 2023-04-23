@@ -1,25 +1,263 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        body {
+            background-color: #f0f0f0;
+        }
+
+        #footer-nav {
+            padding: 0 16px;
+        }
+
+        .outter-list {
+            border-bottom: 1px solid #AAA;
+            padding: 8px 0;
+        }
+
+        .outter-list>label {
+            display: block;
+            width: 100%;
+            padding: 4px 0;
+        }
+
+        .outter-list>input {
+            display: none;
+        }
+
+        .outter-list>input:checked+.inner-list-contaianer {
+            height: 0px;
+            overflow: hidden;
+
+        }
+
+        .inner-list>a {
+            display: block;
+            padding: 4px;
+            color: #444;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: bold;
+        }
+    </style>
 </head>
+
 <body>
-    <ul class="외부-목록-컨테이너">
-        <li class="외부-목록">
-            <label for="shopping">쇼핑 및 조회기</label>
-            <input type="checkbox" name="" id="shopping">
-            <ul class="내부-목록-컨테이너">
-                <li class="내부-목록">
-                    <a href="#">맥</a>
-                    <a href="#">아이패드</a>
-                    <a href="#">아이폰</a>
-                    <a href="#">시청</a>
+    <section id="footer-nav">
+
+
+        <ul class="outter-list-container">
+            <li class="outter-list">
+                <label for="shopping">쇼핑 및 알아보기</label>
+                <input type="checkbox" name="" id="shopping">
+                <ul class="inner-list-contaianer">
+                    <li class="inner-list">
+                        <a href="#">스토어</a>
+                    </li>
+                    <li class="inner-list">
+                        <a href="#">Mac</a>
+                    </li>
+                    <li class="inner-list">
+                        <a href="#">iPad</a>
+                    </li>
+                    <li class="inner-list">
+                        <a href="#">iPhone</a>
+                    </li>
+                    <li class="inner-list">
+                        <a href="#">watch</a>
+                    </li>
+                    <li class="inner-list">
+                        <a href="#">AirPods</a>
+                    </li>
+                    <li class="inner-list">
+                        <a href="#">TV 및 홈</a>
+                    </li>
+                    <li class="inner-list">
+                        <a href="#">AirTag</a>
+                    </li>
+                    <li class="inner-list">
+                        <a href="#">액세서리</a>
+                </ul>
+            </li>
+            <li class="outter-list">
+                <label for="wallet">apple 지갑</label>
+                <input type="checkbox" name="" id="wallet">
+                <ul class="inner-list-contaianer">
+                    <li class="inner-list">
+                        <a href="#">지갑</a>
+                    </li>
+                    <li class="inner-list">
+                        <a href="#">Apple Pay</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="outter-list">
+                <label for="wallet1">계정</label>
+                <input type="checkbox" name="" id="wallet1">
+                <ul class="inner-list-contaianer">
+                    <li class="inner-list">
+                        <a href="#">Apple ID 관리</a>
+                    </li>
+                    <li class="inner-list">
+                        <a href="#">Apple Store 계정</a>
+                    </li>
                 </li>
-            </ul>
-        </li>
-    </ul>
+                <li class="inner-list">
+                    <a href="#">iCloud.com</a>
+                </li>
+                </ul>
+            </li>
+            <li class="outter-list">
+                <label for="wallet2">엔터테인먼트</label>
+                <input type="checkbox" name="" id="wallet2">
+                <ul class="inner-list-contaianer">
+                    <li class="inner-list">
+                        <a href="#">Apple One</a>
+                    </li>
+                    <li class="inner-list">
+                        <a href="#">Apple TV+</a>
+                    </li>
+                    <li class="inner-list">
+                        <a href="#">Apple Music</a>
+                    </li>
+                    <li class="inner-list">
+                        <a href="#">Apple Arcade</a>
+                    </li>
+                    <li class="inner-list">
+                        <a href="#">Apple Podcasts</a>
+                    </li>
+                    <li class="inner-list">
+                        <a href="#">Apple Books</a>
+                    </li>
+                    <li class="inner-list">
+                        <a href="#">App Store</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="outter-list">
+                <label for="wallet3">Apple Store</label>
+                <input type="checkbox" name="" id="wallet3">
+                <ul class="inner-list-contaianer">
+                    <li class="inner-list">
+                        <a href="#">매장 찾기</a>
+                    </li>
+                    <li class="inner-list">
+                        <a href="#">Genius Bar</a>
+                    </li>
+                    <li class="inner-list">
+                        <a href="#">Today at Apple</a>
+                    </li>
+                    <li class="inner-list">
+                        <a href="#">Apple 캠프</a>
+                    </li>
+                    <li class="inner-list">
+                        <a href="#">Apple Store 앱</a>
+                    </li>
+                    <li class="inner-list">
+                        <a href="#">인증 리퍼비쉬 제품</a>
+                    </li>
+                    <li class="inner-list">
+                        <a href="#">금융 혜택</a>
+                    </li>
+                    <li class="inner-list">
+                        <a href="#">Apple Trade In</a>
+                    </li>
+                    <li class="inner-list">
+                        <a href="#">주문 상태</a>
+                    </li>
+                    <li class="inner-list">
+                        <a href="#">쇼핑 도움말</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="outter-list">
+                <label for="wallet4">비즈니스</label>
+                <input type="checkbox" name="" id="wallet4">
+                <ul class="inner-list-contaianer">
+                    <li class="inner-list">
+                        <a href="#">Apple과 비즈니스</a>
+                    </li>
+                    <li class="inner-list">
+                        <a href="#">비즈니스를 위한 제품 쇼핑하기</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="outter-list">
+                <label for="wallet5">교육</label>
+                <input type="checkbox" name="" id="wallet5">
+                <ul class="inner-list-contaianer">
+                    <li class="inner-list">
+                        <a href="#">Apple 그리고 교육</a>
+                    </li>
+                    <li class="inner-list">
+                        <a href="#">초중고용 제품 쇼핑하기</a>
+                    </li>
+                    <li class="inner-list">
+                        <a href="#">대학 생활을 위한 제품 쇼핑하기</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="outter-list">
+                <label for="wallet6">Apple의 가치관</label>
+                <input type="checkbox" name="" id="wallet6">
+                <ul class="inner-list-contaianer">
+                    <li class="inner-list">
+                        <a href="#">손쉬운 사용</a>
+                    </li>
+                    <li class="inner-list">
+                        <a href="#">환경</a>
+                    </li>
+                    <li class="inner-list">
+                        <a href="#">개인정보 보호</a>
+                    </li>
+                    <li class="inner-list">
+                        <a href="#">협력업체에 대한 책임</a>
+                    </li>
+                </ul>
+                <li class="outter-list">
+                <label for="wallet7">Apple 정보</label>
+                <input type="checkbox" name="" id="wallet7">
+                <ul class="inner-list-contaianer">
+                    <li class="inner-list">
+                        <a href="#">Newsroom</a>
+                    </li>
+                    <li class="inner-list">
+                        <a href="#">Apple 리더십</a>
+                    </li>
+                    <li class="inner-list">
+                        <a href="#">채용 안내</a>
+                    </li>
+                    <li class="inner-list">
+                        <a href="#">윤리 및 규정 준수</a>
+                    </li>
+                    <li class="inner-list">
+                        <a href="#">이벤트</a>
+                    </li>
+                    <li class="inner-list">
+                        <a href="#">일자리 창출</a>
+                    </li>
+                    <li class="inner-list">
+                        <a href="#">Apple 연락처</a>
+                    </li>
+                </ul>
+            </li>
+            </li>
+        </ul>
+    </section>
 </body>
+
 </html>
