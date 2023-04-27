@@ -25,7 +25,10 @@
         h1{
             float: left;
             background-color: yellow;
-            padding: 30px;
+            padding: 25px;
+            font-size: 24px;
+            font-style: bold;
+
          }
         nav{
             float: right;
@@ -36,7 +39,7 @@
             padding: 4px;
         }
         .menu-1{
-            margin-bottom: 45px;
+            margin-bottom: 25px;
             overflow: hidden;
             background-color: yellow;
         }
@@ -48,7 +51,6 @@
 
         main{
             width: 1000px; 
-            border: 1px solid black;
             box-sizing: border-box;
             margin: 0 auto;
             overflow: hidden;
@@ -64,19 +66,36 @@
 
         }
         article>h2{
-            padding: 8px;
+            padding: 8px 2px;
             background-color: bisque;
+            font-size: 20px;
+            font-style: bold;
+            padding-left: 8px;
         }
-
+        article>p{
+            padding: 8px;
+            font-size: 18px;
+            line-height: 120%;
+        }
+        article:last-child{
+            margin-bottom: 0;
+        }
+        main>aside>h2{
+            padding: 8px;
+        }
         aside{
             width: 282px;
             border: 1px solid black;
             box-sizing: border-box;
             float: right;
             margin-left: 16px;
+            padding: 8px;
+            font-size: 18px;
+            line-height: 120%;
         }
         .banner{
             background-color: gray;
+            margin-top: 75px;
         }
         footer{
             width: 1000px;
@@ -86,6 +105,8 @@
             padding: 24px;
             text-align: center;
             font-size: 20px;
+            margin: 0 auto;
+            margin-top: 16px;
         }
 
     </style>
@@ -128,9 +149,9 @@
         <h2>right aide</h2>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque deleniti illo omnis quasi magni, accusamus, possimus libero corrupti aspernatur in optio vero suscipit culpa, cum quia aperiam temporibus ipsam vel!</p>
         
-        <label for=""></label>
-    <input type="text"> 
-    <button></button>
+        <label for="input-mail"></label>
+        <input type="email" id="input-mail">
+    <button>mailto</button>
     <div class="banner">
     <h3>text</h3>
     <p>banner</p>
