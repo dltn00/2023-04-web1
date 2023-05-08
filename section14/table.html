@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            margin: 0 auto;
+            border: 1px solid black;
+            width: 1000px;
+        }
+        table{
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+        table:nth-child(2){
+            background-color: antiquewhite;
+        }
+       th,td{
+            width: 100;
+            border: 1px solid black;
+            padding: 0 8px;
+            background-color: gray;
+            height: 24px;
+        }
+
+        .table-list-input{
+            width: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <form action="" class="table-list">
+        <h3>출석자 명단</h3>
+        <table>
+            <colgroup>
+            <col style="width: 100px;">
+            <col style="width: 600px;">
+            <col>
+            </colgroup>
+            <tr>
+                <th>이름</th>
+                <th>학과</th>
+                <th>유형</th>
+            </tr>
+            <tr>
+                <td><input type="text" class="table-list-input"></td>
+                <td><input type="text" class="table-list-input"></td>
+                <td><input type="text" class="table-list-input"></td>
+            </tr>
+            <tr>
+                <td><input type="text" class="table-list-input"></td>
+                <td><input type="text" class="table-list-input"></td>
+                <td><input type="text" class="table-list-input"></td>
+            </tr>
+            <tr>
+                <td><input type="text" class="table-list-input"></td>
+                <td><input type="text" class="table-list-input"></td>
+                <td><input type="text" class="table-list-input"></td>
+            </tr>
+            <tr>
+                <td><input type="text" class="table-list-input"></td>
+                <td><input type="text" class="table-list-input"></td>
+                <td><input type="text" class="table-list-input"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
