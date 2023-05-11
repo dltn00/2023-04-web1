@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,32 +7,32 @@
     <title>Document</title>
     <style>
         form{
+            width: 1000px;
             margin: 0 auto;
             border: 1px solid black;
-            width: 1000px;
             padding: 20px;
         }
         table{
             border-collapse: collapse;
+            background-color: beige;
             margin: 0 auto;
-            background-color: rgb(160, 217, 233);
         }
         tr:nth-child(2n){
-            background-color: rgb(203, 239, 245);
+            background-color: white;
         }
-       th,td{
+        th,td{
             border: 1px solid gray;
-            padding: 0 ;
             height: 40px;
+            padding: 0;
         }
-
         .table-list-input{
-            width: 100%;
             border: none;
-            padding: 0 8px;
             outline: none;
-            box-sizing: border-box;
             background-color: transparent;
+            width: 100%;
+            padding: 0 8px;
+            box-sizing: border-box;
+            text-align: center;
         }
     </style>
 </head>
@@ -44,7 +44,7 @@
             <col style="width: 150px;">
             <col style="width: 65%;">
             <col>
-            </colgroup>
+        </colgroup>
             <tr>
                 <th>이름</th>
                 <th>학과</th>
