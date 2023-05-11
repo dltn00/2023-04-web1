@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #ebebeb;
+        }
+
+        .content {
+            width: 50%;
+            border-radius: 4px;
+            background-color: white;
+            padding: 16px;
+        }
+
+        .image-container {
+            height: 200px;
+            background-color: #cdcdcd;
+            position: relative;
+
+            background-image: url(/img/puppy-2785074__480.jpg);
+            background-size: cover;
+            background-position: 50% 25%;
+
+        }
+
+        .plus-button {
+            display: block;
+            width: 24px;
+            height: 24px;
+            background-color: #000000;
+            opacity: 0.5;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 8px;
+            right: 8px;
+        }
+
+        .plus-button>span {
+            display: block;
+            width: 12px;
+            height: 2px;
+            background-color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .plus-button>span:nth-child(2) {
+
+            transform: translate(-50%, -50%) rotate(90deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="image-container">
+            <a href="#" class="plus-button">
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+        <h3>스케치 디자인</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, eveniet. Soluta magnam nihil, est
+            distinctio, corrupti eveniet dolores blanditiis, eos sint nisi corporis error reprehenderit sunt laudantium
+            nulla recusandae quos!</p>
+    </div>
+</body>
+
+</html>
