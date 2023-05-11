@@ -10,35 +10,40 @@
             margin: 0 auto;
             border: 1px solid black;
             width: 1000px;
+            padding: 20px;
         }
         table{
             border-collapse: collapse;
             margin: 0 auto;
+            background-color: burlywood;
         }
-        table:nth-child(2){
+        tr:nth-child(2n){
             background-color: antiquewhite;
         }
        th,td{
             width: 100;
-            border: 1px solid black;
+            border: 1px solid gray;
             padding: 0 8px;
-            background-color: gray;
-            height: 24px;
+            height: 40px;
         }
 
         .table-list-input{
             width: 100%;
             border: none;
+            outline: none;
+            background-color: transparent;
+            padding: 0 8px;
+            box-sizing: border-box;
         }
     </style>
 </head>
 <body>
-    <form action="" class="table-list">
-        <h3>출석자 명단</h3>
-        <table>
+    <form action="" method="get">
+        <h3>출석자 명단 상세</h3>
+        <table class="table-list">
             <colgroup>
-            <col style="width: 100px;">
-            <col style="width: 600px;">
+            <col style="width: 150px;">
+            <col style="width: 65%;">
             <col>
             </colgroup>
             <tr>
