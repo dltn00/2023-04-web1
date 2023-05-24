@@ -11,7 +11,7 @@
             padding: 0;
         }
         header{
-            background-color: pink;
+            background-color: aquamarine;
             
         }
         a{
@@ -29,8 +29,7 @@
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
-            align-items: center;
-            padding: 8px;
+            padding: 32px;
 
         }
         .header-nav-list{
@@ -41,72 +40,112 @@
         .header-nav{
             display: flex;
         }
-        .img{
-            width: 1000px;
-            height: 300px;
-            background-color: gray;
-            margin: 0 auto;
-        }
-        .mini-box{
-            width: 260px;
-            height: 50px;
-            background-color: gray;
-            margin: 0 auto;
-            margin-top: 24px;  
-        }
-        .middle-box-container{
-            width: 1000px;
-            display: flex;
-            justify-content: space-between;
-            margin: 0 auto;
-        }
-        .middle-box-list:nth-child(1),
-        .middle-box-list-:nth-child(1){
-            margin-top: 24px;
-        }
-        .middle-box-list{
-            width: 401px;
-            height: 200px;
-            background-color: gray;
-            margin-top: 18px;
-            margin-left: 90px;
+   
+        #intor-banner{
+            height: 800px;
+            background-image: url(../img/꽃.jpg);
+            background-position: center;
+            background-size: cover;
             
-        }  
-        .middle-box-list-{
-            width: 401px;
-            height: 200px;
+            
+        }
+        #main-contents {
+            background-color: rgb(218, 236, 230);
+            padding-top: 32px;
+            padding-bottom: 80px;
+        }
+
+        .section-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .section-title {
+            font-size: 32px;
+            font-weight: 900;
+            text-align: center;
+            color: black;
+            margin-bottom: 32px;
+        }
+
+        .contents-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
+
+        .content {
+            display: flex;
+            gap: 16px;
+        }
+
+        .content>figure {
             background-color: gray;
-            margin-top: 18px;
-            margin-right: 90px;
-        }                  
+            height: 400px;
+            width: 100%;
+        }
+
+
+        .contents-explane {
+            height: 400px;
+            display: flex;
+            gap: 16px;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .content-title {
+            height: 40px;
+            background-color: aquamarine;
+            line-height: 40px;
+        }
+                 
         #footer-box{
             background-color: gray;
             text-align: center;
         }
-
+        footer a{
+            color: white;
+        }
         .footer-container{
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top: 24px;
-            padding: 8px 0;
+            padding:  24px 0;
         }
         .footer-menu{
-            padding: 0 8px;
+            padding: 0 16px;
         }
+
+        @media screen and  (max-width: 1300px) {
+            .content{
+                flex-direction: column;
+            }
+
+        }
+            
+        
 
         @media screen and (max-width:767px) {
             header {
                 padding: 0 16px;
             }
 
-            nav {
+            section {
+                padding: 0 16px;
+            }
+
+            header nav {
                 display: none;
             }
 
 
             .ham {
                 display: block;
+            }
+
+            footer {
+                padding-left: 16px;
+                padding-right: 16px;
             }
         }
     </style>
@@ -133,33 +172,65 @@
     </div>
 </header>
 
-<section>
-    <div class="img"></div>
-    <div class="mini-box"></div>
-<div class="middle-box-container">
-    <div class="middle-box">
-        <div class="middle-box-list"></div>
-        <div class="middle-box-list"></div>
-        <div class="middle-box-list"></div>
-    </div>
-    <div class="middle-box-">
-        <div class="middle-box-list-"></div>
-        <div class="middle-box-list-"></div>
-        <div class="middle-box-list-"></div>
-    </div>
-</div>
+<section id="intor-banner">
 </section>
+<main>
+    <section id="main-contents">
+        <div class="section-container">
+            <h2 class="section-title">제목</h2>
+
+            <div class="contents-wrapper">
+                <article class="content">
+                    <figure>
+                        <img src="" alt="">
+                    </figure>
+                    <div class="contents-explane">
+                        <h3 class="content-title">제목</h3>
+                        <p class="content-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis itaque
+                            iusto fugiat et ipsam repellendus similique animi molestiae. Soluta adipisci veritatis
+                            maxime? Veniam, dolores consequuntur atque quisquam expedita vel recusandae?</p>
+                    </div>
+                </article>
+
+                <article class="content">
+                    <div class="contents-explane">
+                        <h3 class="content-title">제목</h3>
+                        <p class="content-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi aut
+                            eaque impedit doloribus consequatur. Assumenda error maiores dolore debitis ullam in,
+                            adipisci voluptates dolorum autem obcaecati dignissimos sint, porro quibusdam.</p>
+                    </div>
+                    <figure>
+                        <img src="" alt=""></figure>
+                </article>
+
+                <article class="content">
+                    <figure>
+                        <img src="" alt="">
+                    </figure>
+                    <div class="contents-explane">
+                        <h3 class="content-title">제목</h3>
+                        <p class="content-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi aut
+                            eaque impedit doloribus consequatur. Assumenda error maiores dolore debitis ullam in,
+                            adipisci voluptates dolorum autem obcaecati dignissimos sint, porro quibusdam.</p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
     <nav id="footer-box">
         <ul class="footer-container">
-            <li class="footer-menu"><a href="#">푸터메뉴</a></li>
-            <li class="footer-menu"><a href="#">푸터메뉴</a></li>
-            <li class="footer-menu"><a href="#">푸터메뉴</a></li>
-            <li class="footer-menu"><a href="#">푸터메뉴</a></li>
-            <li class="footer-menu"><a href="#">푸터메뉴</a></li>
-            <li class="footer-menu"><a href="#">푸터메뉴</a></li>
+            <li class="footer-menu"><a href="#">MENU</a></li>
+            <li class="footer-menu"><a href="#">MENU</a></li>
+            <li class="footer-menu"><a href="#">MENU</a></li>
+            <li class="footer-menu"><a href="#">MENU</a></li>
+            <li class="footer-menu"><a href="#">MENU</a></li>
+            <li class="footer-menu"><a href="#">MENU</a></li>
         </ul>
-        <p>카피라이터</p>
+        <p class="copy">&copy;copyright By SOL</p>
     </nav>
-    
+</footer>   
 </body>
 </html>
