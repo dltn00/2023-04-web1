@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            max-width: 1200px;
+            width: 1200px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px;
+            margin: 0 auto;
+        }
+        .header-container{
+            display: flex;
+            justify-content: right 100px;
+            gap: 36px; 
+            margin-left: 700px;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            color: rgb(82, 118, 218);
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .logo{
+            color: rgb(82, 118, 218);
+            font-size: 24px;
+            font-weight: bolder;
+        }
+        
+        .main-container{
+            background-image: url(../img/art.jpg);
+            background-position: center;
+            background-size: cover;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h2{
+            color: white;
+            font-weight: bolder;
+            font-size: 48px;
+            text-align: center;
+
+        }
+        #search{
+            width: 600px;
+            height: 30px;
+            border-radius: 10px;
+            border: none;
+            margin-top: 50px;
+            padding-left: 50px;
+
+            
+        }
+        #help{
+            text-align: center;
+            margin-top: 60px;
+        }
+        h3{
+            font-size: 30px;
+            line-height: 100px;
+        }
+        #help>p{
+            font-size: 20px;
+        }
+        #help>p>a{
+            font-weight: lighter;
+        }
+        .box-wrapper{
+            display: flex;
+            margin: 0 auto;
+            justify-content: center;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .main-box-list{
+            width: 250px;
+            height: 300px;
+            border: 1px solid black;
+            font-weight: bold;
+            color: rgb(82, 118, 218);
+            border-radius: 8px;
+            
+        }
+        .helper{
+            text-align: center;
+            margin-top: 50px;
+        }
+        footer{
+            background-color: black;
+            height: 100px;
+        }
+        .footer-box{
+            color: white;
+            display: flex;
+            justify-content: space-between;  
+            align-items: center;
+            padding-top: 24px;
+        }
+        @media screen and  (max-width: 1300px) {
+            .content{
+                flex-direction: column;
+            }
+
+        }
+            
+        
+
+        @media screen and (max-width:767px) {
+            header {
+                padding: 0 16px;
+            }
+
+            section {
+                padding: 0 16px;
+            }
+
+            header nav {
+                display: none;
+            }
+
+
+            .ham {
+                display: block;
+            }
+
+            footer {
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="logo">Discord</h1>
+        <nav>
+            <ul class="header-container">
+                <li><a href="#">피드백</a></li>
+                <li><a href="#">한국어 v</a></li>
+                <li><a href="#">문의등록</a></li>
+            </ul>
+        </nav>
+        <div class="login"><a href="#">로그인</a></div>
+    </header>
+    <main>
+        <section class="main-container">
+            <div class="banner">
+                <h2>고객 지원 센터</h2>
+                <input type="email" name="검색" id="search" placeholder="검색">
+                <label for="search"></label>
+            </div>
+        </section>
+        <nav id="help">
+            <h3>도움이 필요하신가요? 저희가 도와드리겠습니다.</h3>
+            <p>계정 설정부터 승인까지 Discord와 관련된 모든 것을 문의하세요.</p>
+            <p>Discord를 시작한 지 얼마 안 되어 팁을 찾고 계신가요? 그렇다면,저희의 <a href="#">초보자를 위한 가이드를 확인해 보세요!</a></p>
+        </nav>
+        <div class="main-box">
+            <section class="box-wrapper">
+                <div class="main-box-list">공지 사항</div>
+                <div class="main-box-list">Discord 인터페이스</div>
+                <div class="main-box-list">계정 설정</div>
+                <div class="main-box-list">시작하기</div>
+                <div class="main-box-list">서버 설정</div>
+                <div class="main-box-list">커뮤니티 프로그램</div>
+                <div class="main-box-list">Nitro</div>
+                <div class="main-box-list">청구서</div>
+                <div class="main-box-list">신뢰 & 보안</div>        
+                <div class="main-box-list">자주 묻는 질문</div>
+            </section>
+            <div class="helper">
+                <p>도움을 받을 수 있는 다른 방법</p>
+            </div>
+            <section class="box-wrapper">
+                <div class="main-box-list">게임 개발자</div>
+                <div class="main-box-list">Twitter</div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <nav id="footer-container">
+            <ul class="footer-box">
+                <h1 class="logo">Discord</h1>
+                <li class="footer-box-text">다운로드</li>
+                <li class="footer-box-text">지원</li>
+                <li class="footer-box-text">피드백</li>
+                <li class="footer-box-text">상태</li>
+                <li class="footer-box-text">파트너</li>
+                <li class="footer-box-text">HypeSquad</li>
+                <li class="footer-box-text">상점</li>
+                <li class="footer-box-text">제품 이미지</li>
+                <li class="footer-box-text">회사</li>
+                <li class="footer-box-text">직업-구인</li>
+                <li class="footer-box-text">블로그</li>
+                <li class="footer-box-text">조건&개인 정보 보호</li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
