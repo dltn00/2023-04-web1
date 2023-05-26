@@ -13,10 +13,10 @@
         header{
             max-width: 1200px;
             width: 1200px;
+            height: 60px;
             display: flex;
-            justify-content: space-between;
             align-items: center;
-            padding: 18px;
+            justify-content: space-between;
             margin: 0 auto;
         }
         .header-container{
@@ -32,21 +32,18 @@
             color: rgb(82, 118, 218);
             font-weight: bold;
             text-decoration: none;
-        }
-        .logo{
-            color: rgb(82, 118, 218);
-            font-size: 24px;
-            font-weight: bolder;
+            cursor: pointer;
         }
         
         .main-container{
-            background-image: url(../img/art.jpg);
+            background-image: url(../img/b7e9dce75f9edb23504e13b4699e208f204e5015.png);
             background-position: center;
             background-size: cover;
             height: 300px;
             display: flex;
             justify-content: center;
             align-items: center;
+            cursor: pointer;
         }
         h2{
             color: white;
@@ -62,12 +59,12 @@
             border: none;
             margin-top: 50px;
             padding-left: 50px;
-
+            background-image: url(../img/);
             
         }
         #help{
             text-align: center;
-            margin-top: 60px;
+            margin-top: 30px;
         }
         h3{
             font-size: 30px;
@@ -94,6 +91,8 @@
             font-weight: bold;
             color: rgb(82, 118, 218);
             border-radius: 8px;
+            background-size: cover;
+            background-position: center;
             
         }
         .helper{
@@ -101,15 +100,32 @@
             margin-top: 50px;
         }
         footer{
+            width: 100%;
             background-color: black;
-            height: 100px;
+            height: 600px;
+            margin: 0 auto;
+        }
+        .apps{
+            height: 300px;
+            width: 1200px;
+            background-size: cover;
+            background-position: center;
+        }
+        #footer-container{
+            display: flex;
+            margin-top: 30px;
         }
         .footer-box{
+            width: 1200px;
+            height: 100px;
             color: white;
             display: flex;
-            justify-content: space-between;  
-            align-items: center;
+            justify-content: center;  
+            flex-direction: column;
             padding-top: 24px;
+        }
+        footer>a{
+            color: white;
         }
         @media screen and  (max-width: 1300px) {
             .content{
@@ -134,7 +150,7 @@
             }
 
 
-            .ham {
+            .login {
                 display: block;
             }
 
@@ -147,11 +163,11 @@
 </head>
 <body>
     <header>
-        <h1 class="logo">Discord</h1>
+        <div class="logo"> <a href=""><img src="../img/cc59daa07820943e943c2fc283b9079d7003ff76.svg" alt=""></a></div>
         <nav>
             <ul class="header-container">
                 <li><a href="#">피드백</a></li>
-                <li><a href="#">한국어 v</a></li>
+                <li><a href="#">한국어 ∨</a></li>
                 <li><a href="#">문의등록</a></li>
             </ul>
         </nav>
@@ -172,42 +188,65 @@
         </nav>
         <div class="main-box">
             <section class="box-wrapper">
-                <div class="main-box-list">공지 사항</div>
-                <div class="main-box-list">Discord 인터페이스</div>
-                <div class="main-box-list">계정 설정</div>
-                <div class="main-box-list">시작하기</div>
-                <div class="main-box-list">서버 설정</div>
-                <div class="main-box-list">커뮤니티 프로그램</div>
-                <div class="main-box-list">Nitro</div>
-                <div class="main-box-list">청구서</div>
-                <div class="main-box-list">신뢰 & 보안</div>        
-                <div class="main-box-list">자주 묻는 질문</div>
+                <div class="main-box-list">
+                    </a><img src="../img/1bd76d1fd516f8dacd3c7422a8ceb929ef2502d9.svg" alt=""><a href="#">공지사항</a>        
+                </div>
+                <div class="main-box-list">
+                    <img src="../img/8c6c6469bdca01e05d2870e6d373c1d80e290255.svg" alt=""><a href="#">Discord 인터페이스</a>
+                </div>
+                <div class="main-box-list">
+                    <img src="../img/3da6524afd9979b44c5f6ceaf19e812c204ad74e.svg" alt=""><a href="#">계정 설정</a>
+                </div>
+                <div class="main-box-list">
+                    <img src="../img/35f736c34c81d953054d0c1e202f71c8094f8fbf.svg" alt=""><a href="#">시작하기</a>
+                </div>
+                <div class="main-box-list">
+                    <img src="../img/33f0bd0c3a2c58763cb0404a18bb38da48fc289d.svg" alt="">서버 설정<a href="#"></a>
+                </div>
+                <div class="main-box-list">
+                    <img src="../img/dd93acfbff40b1ea53f2b4e8fa51ac142486bd13.svg" alt="">커뮤니티 프로그램<a href="#"></a>
+                </div>
+                <div class="main-box-list">
+                    <img src="../img/d7415f17818f8caabf5d98099171b227201a3e41.svg" alt="">Nitro<a href="#"></a>
+                </div>
+                <div class="main-box-list">
+                    <img src="../img/e5bd3c63530b0a8e55b406528f2fd9d61b8bd923.svg" alt="">청구서<a href="#"></a>
+                </div>
+                <div class="main-box-list">
+                    <img src="../img/6f28e83ed890200c649526472dec1e8f593fe1dd.svg" alt="">신뢰 & 보안<a href="#"></a>
+                </div>        
+                <div class="main-box-list">
+                    <img src="../img/1883060a5132c470528a20c1cfe42976e7c167ca.svg" alt="">자주 묻는 질문<a href="#"></a>
+                </div>
             </section>
             <div class="helper">
                 <p>도움을 받을 수 있는 다른 방법</p>
             </div>
             <section class="box-wrapper">
-                <div class="main-box-list">게임 개발자</div>
-                <div class="main-box-list">Twitter</div>
+                <div class="main-box-list">
+                    <img src="../img/66a7b3885ab7dccb734dd94b9ed3408fc410d30c.svg" alt=""> 게임 개발자</div>
+                <div class="main-box-list">
+                    <img src="../img/ceb4c1d378277188ab383a50029b43e5d3b1581b.svg" alt=""> Twitter</div>
             </section>
         </div>
     </main>
     <footer>
+        <div class="apps"><img src="../img/c9f23a6ae41ebc0d9c21b08c2158c112fd5847b2.png" alt=""></div>
         <nav id="footer-container">
-            <ul class="footer-box">
-                <h1 class="logo">Discord</h1>
-                <li class="footer-box-text">다운로드</li>
-                <li class="footer-box-text">지원</li>
-                <li class="footer-box-text">피드백</li>
-                <li class="footer-box-text">상태</li>
-                <li class="footer-box-text">파트너</li>
-                <li class="footer-box-text">HypeSquad</li>
-                <li class="footer-box-text">상점</li>
-                <li class="footer-box-text">제품 이미지</li>
-                <li class="footer-box-text">회사</li>
-                <li class="footer-box-text">직업-구인</li>
-                <li class="footer-box-text">블로그</li>
-                <li class="footer-box-text">조건&개인 정보 보호</li>
+            <div class="logo"> <a href=""><img src="../img/cc59daa07820943e943c2fc283b9079d7003ff76.svg" alt=""></a></div>
+            <ul class="footer-box">   
+                <li class="footer-box-text"><a href="#">다운로드</a></li>
+                <li class="footer-box-text"><a href="#">지원</a></li>
+                <li class="footer-box-text"><a href="#">피드백</a></li>
+                <li class="footer-box-text"><a href="#">상태</a></li>
+                <li class="footer-box-text"><a href="#">파트너</a></li>
+                <li class="footer-box-text"><a href="#">HypeSquad</a></li>
+                <li class="footer-box-text"><a href="#">상점</a></li>
+                <li class="footer-box-text"><a href="#">제품 이미지</a></li>
+                <li class="footer-box-text"><a href="#">회사</a></li>
+                <li class="footer-box-text"><a href="#">직업-구인</a></li>
+                <li class="footer-box-text"><a href="#">블로그</a></li>
+                <li class="footer-box-text"><a href="#">조건&개인 정보 보호</a></li>
             </ul>
         </nav>
     </footer>
