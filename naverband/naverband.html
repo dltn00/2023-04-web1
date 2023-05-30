@@ -4,28 +4,187 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>naverband</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 16px;
+            background-color: #f6f8fa;
+        }
+        .logo{
+            font-size: 20px;
+            border-radius: 30px;
+            border: 0.1em solid black;
+            padding: 0 6px;
+            
+        }
+        .logo>a{
+            color: black;
+        }
+        .header-contents-list{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 36px; 
+            font-size: 14px;
+        }
+        .header-contents-login{
+            width: 90px;
+            height: 36px;
+            background-color: rgb(75, 196, 75);
+            margin-right: 50px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+        .header-contents>a{
+            color: rgb(51, 50, 50);
+        }
+        .header-contents-login>a{
+            color: white;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        .main-container{
+            background-color: #f6f8fa;
+            padding-top: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .phone{
+            width: 540px;
+            height: 694px;
+            background-image: url(../naverband/img/bg_sloganImg.jpg);
+            background-position: center;
+            background-size: 540px 694px;
+        }
+        .main-wrapper{
+            padding-left: 48px;
+        }
+        h2{
+            font-size: 48px;
+            font-weight:    500;
+        }
+        .login-box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 24px;
+
+        }
+        .main-login{
+            width: 350px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(75, 196, 75);
+            color: white;
+            border: 1px solid rgb(238, 235, 235);
+            
+        }
+        .main-sign{
+            width: 350px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            color: black;
+            border: 1px solid rgb(238, 235, 235);
+        }
+        .band-wrapper{
+            font-size: 14px;
+            line-height: 28px;
+            margin-top: 24px;
+        }
+        .band-list-a{
+            color: rgb(75, 196, 75);
+            text-decoration: underline;
+        }
+        .banner-container{
+            height: 540px;
+            background-image: url(../naverband/img/bg_intro.jpg);
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            flex-direction: column;
+            line-height: 24px;
+            text-align: center;
+            gap: 8px;
+        }
+        .banner-h2{
+            font-size: 40px;
+        }
+        .main-contents-container{
+            width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 48px;
+            margin-top: 48px;
+            
+        }
+        .main-contents{
+            width: 300px;
+            height: 160px;
+            
+        }
+        .main-img{
+            width: 300px;
+            height: 160px;
+        }
+        .main-contents>h3{
+            font-size: 24px;
+            font-weight: 500;
+            padding-top: 12px;
+        }
+        .main-contents>p{
+            font-size: 15px;
+            line-height: 24px;
+        }
+        
+    </style>
 </head>
 <body>
     <header>
-        <h1 class="logo">BAND</h1>
-        <nav id="header-nav">
-            <ul class="header-contents-list">
-                <li class="header-contents">한국어</li>
-                <li class="header-contents">회원가입</li>
-                 <li class="header-contents">로그인</li>
-            </ul>
-        </nav>
+        <h1 class="logo"><a href="">BAND</a></h1>
+        <ul class="header-contents-list">
+            <li class="header-contents"><a href="">한국어 ▾</a></li>
+            <li class="header-contents"><a href="">회원가입</a></li>
+            <li class="header-contents-login"><a href="">로그인</a></li>
+        </ul>
+        
     </header>
     <main>
         <section class="main-container">
             <div class="phone"></div>
             <div class="main-wrapper">
-                <h2>모임이 쉬워진다!<br>우리끼리 밴드</h2>
+                <h2>모임이 쉬워진다!<br>우리끼리 밴드</h2><br>
                 <p>당신의 모임도 Band로 시작하세요.</p>
                 <div class="login-box">
-                    <a href="#">로그인</a>
-                    <a href="#">회원가입</a></div>
+                    <a href="#" class="main-login">로그인</a>
+                    <a href="#" class="main-sign">회원가입</a></div>
                 <ul class="band-wrapper">
                     <li class="main-band-list">내게 맞는 밴드를 만나려면 <a href="#" class="band-list-a">밴드 찾기</a></li>
                     <li class="main-band-list">모임별 밴드 활용법 <a href="#" class="band-list-a">밴드 가이드 보기</a></li>
@@ -33,119 +192,145 @@
                 </ul>
             </div>
         </section>
-                
-                <section class="banner-container">
-                    <h2>모임을 위한 공간, 밴드</h2>
-                    <p>밴드는 그룹 멤버와 함께 하는 공간입니다. <br>동호회, 스터티, 주제별 모임을 밴드로 시작하세요.</p>
-                </section>
+        <section class="banner-container">
+            <h2 class="banner-h2">모임을 위한 공간, 밴드</h2><br>
+            <p>밴드는 그룹 멤버와 함께 하는 공간입니다. <br>동호회, 스터티, 주제별 모임을 밴드로 시작하세요.</p>
+        </section>
             
-            <section class="main-contents-container">
-                <div class="main-contents">
-                    <img src="../naverband/img/img_seo01.jpg" alt="">
-                    <h3>어떤 모임이라도!</h3><p>친구, 가족, 동료 등 함께 하고 싶은 사람과 우리만의 공간을 만들어보세요.</p>
-                </div>
-                <div class="main-contents"></div>
-                    <img src="../naverband/img/img_seo02.jpg" alt="">
-                    <h3>모임에 딱 맞는 기능들</h3><p>투표로 의견을 모으고, 함께 일정을 공유하며 게시판과 앨범에는 추억을 쌓아보세요.</p>
-                </div>
-                <div class="main-contents">
-                <img src="../naverband/img/img_seo03.jpg" alt="">
-                <h3>내가 원하는 모임 찾기</h3><p>취미, 스포츠, 또래 모임 등 나와 같은관심사 밴드를 찾을 수 있어요.</p>
-                </div>
-            </section>
+        <section class="main-contents-container">
+            <div class="main-contents">
+                <img src="../naverband/img/img_seo01.jpg" alt="" class="main-img">
+                <h3>어떤 모임이라도!</h3><br><p>친구, 가족, 동료 등 함께 하고 싶은 사람과 우리만의 공간을 만들어보세요.</p>
+            </div>
+            <div class="main-contents">
+                <img src="../naverband/img/img_seo02.jpg" alt="" class="main-img">
+                <h3>모임에 딱 맞는 기능들</h3><br><p>투표로 의견을 모으고, 함께 일정을 공유하며 게시판과 앨범에는 추억을 쌓아보세요.</p>
+            </div>
+            <div class="main-contents">
+                <img src="../naverband/img/img_seo03.jpg" alt="" class="main-img">
+                <h3>내가 원하는 모임 찾기</h3><br><p>취미, 스포츠, 또래 모임 등 나와 같은관심사 밴드를 찾을 수 있어요.</p>
+            </div>
+        </section>
         <section class="main-contents-wrapper">
             <div class="main-contents-text">
-            <h3>이런 밴드는 어때요</h3><a href="">모두보기</a>
+            <h3>이런 밴드는 어때요</h3><a href="#">모두보기</a>
             </div>
             <ul class="maind-contents-list">
                 <li class="main-contents">
-                    <a href=""><img src="" alt="">
-                    <h3>오늘의 크로키</h3>
+                    <a href="#"><img src="../naverband/img/1_87bUd018svc7ej9is8u4b2f_eky5eu.jpg" alt="">
+                    <h3>실내 대형견 극복기! 그레이트 피레니즈&골든 리트리버</h3>
                     <p>
-                        <span>크로키하는 사람들 모임</span>
-                        <span>멤버 207·리더 박수현 판교76년</span>
+                        <span>
+                            실내 대형견 극복기!
+                            그레이트피레니즈&골든 리트리버가 함께 자라가는 이야기~~퓨어와 엘리의
+                            모든 일상을 추억으로 남기며 ~
+                            많은 분들과 아이들의 예쁜모습~ 함께 나누고 싶네요!
+                        </span>
+                        <span>멤버 975 리더 엘리&퓨어/엘퓨맘(일산)</span>
+                        <span>대형견 사랑 밴드 더보기</span>
+                    </p> 
+                </li>
+                <li class="main-contents">
+                    <a href="#"><img src="../naverband/img/0_b22Ud018svcuq6a3go7pim7_kiomv.jpg" alt="">
+                    <h3>향기있는 삶</h3>
+                    <p>
+                        <span>
+                            향기있는 삶을 시작하려 합니다
+                            아름다운 삶을 함께 나누실래요?
+                        </span>
+                        <span>멤버 1,739 리더 아카시아</span>
+                        <span>소통 밴드 더보기</span>
+                    </p> 
+                </li>
+                <li class="main-contents">
+                    <a href="#"><img src="../naverband/img/7_df4Ud018svca4zcy7klf575_mylz2j.jpg" alt="">
+                    <h3>나를 살리는 한줄 명언</h3>
+                    <p>
+                        <span>
+                            짧은 명언을 통해 생각과 삶이 바뀌어 행복을 주는 밴드
+                            (서울 마포 2년제 학력인정 주부학교 일성여자중고등학교 한문교사)
+                        </span>
+                        <span>멤버 7,238 리더 명언향기</span>
+                        <span>명언 밴드 더보기</span>
+                    </p> 
+                </li>
+                <li class="main-contents">
+                    <a href="#"><img src="../naverband/img/3_af9Ud018svcrpyub182uzl5_kp64f6.jpg" alt="">
+                    <h3>젠탱글</h3>
+                    <p>
+                        <span>패턴만으로
+                            나만의작품을 그리고
+                            행복해지는 젠탱글
+                            함께해요</span>
+                        <span>멤버 810 리더 박수아(인천)</span>
+                        <span>젠탱글 밴드 더보기</span>
+                    </p> 
+                </li>
+                <li class="main-contents">
+                    <a href="#"><img src="../naverband/img/eb2Ud015dx5nr1cd29q1_ektqox.jpg" alt="">
+                    <h3>굿모닝 베트남</h3>
+                    <p>
+                        <span>
+                            굿모닝베트남은 베트남 여행 정보를 기본적으로 하며 국내 및 해외 타 국가의 여행정보만 을 공유하는 여행정보 밴드입니다
+                        </span>
+                        <span>멤버 17,710 리더 신짜오</span>
+                        <span>해외여행 밴드 더보기</span>
+                    </p> 
+                </li>
+                <li class="main-contents">
+                    <a href="#"><img src="../naverband/img/i_4d8Ud018svc1o0c4059l68nw_rid19j.jpg" alt="">
+                    <h3>그림 솜씨 자랑하기</h3>
+                    <p>
+                        <span>멤버 98 리더 (EC런트)</span>
+                        <span>그림솜씨 밴드 더보기</span>
+                    </p> 
+                </li>
+                <li class="main-contents">
+                    <a href="#"><img src="../naverband/img/d_5e7Ud018svc1wnxpp3oh8qhp_u8z9gk.jpg" alt="">
+                    <h3>마음밭수채화세상</h3>
+                    <p>
+                        <span>
+                            누구나 그림을사랑하는 분들이 이끌어주며 마음을나눌수 있는 자리를 만들었습니다 ᆞ(수채화ᆞ유화ᆞ인물화ᆞ어반스케치 ᆞ등)
+                        </span>
+                        <span>멤버 2,133 리더 장애정 서울</span>
+                        <span>수채화 밴드 더보기</span>
+                    </p> 
+                </li>
+                <li class="main-contents">
+                    <a href="#"><img src="../naverband/img/d_4chUd018svcff1ksxx8xrkl_281lrf.jpg" alt="">
+                    <h3>인물스케치</h3>
+                    <p>
+                        <span>
+                            예술을 사랑하는분과
+                            그림그리기를 좋아하는분들이
+                            모여서 함께공유하고 즐기는
+                            취미공간입니다
+                            
+                        </span>
+                        <span>멤버 234 리더 권동하 경기분당 남</span>
                         <span>크로키 인증 밴드 더보기</span>
                     </p> 
                 </li>
                 <li class="main-contents">
-                    <a href=""><img src="" alt="">
-                    <h3>오늘의 크로키</h3>
+                    <a href="#"><img src="../naverband/img/i_37aUd018svcmo6d2d978sa7_1l2kd7.jpg" alt="">
+                    <h3>어썸드로잉스쿨 _드로잉과 어반스케치</h3>
                     <p>
-                        <span>크로키하는 사람들 모임</span>
-                        <span>멤버 207·리더 박수현 판교76년</span>
-                        <span>크로키 인증 밴드 더보기</span>
+                        <span>
+                            여행드로잉과 어반스케치를 주제로 다양한 정보를 나누는 커뮤니티입니다. 세계속의 스케쳐들을 소개하고 드로잉작가와 함께 그림에 대해 소통하는 공간입니다.
+                        </span>
+                        <span>멤버 1,093 리더 Sangjin Lee</span>
+                        <span>드로잉 인증 밴드 더보기</span>
                     </p> 
                 </li>
                 <li class="main-contents">
-                    <a href=""><img src="" alt="">
-                    <h3>오늘의 크로키</h3>
+                    <a href="#"><img src="../naverband/img/0_cfbUd018svc1sia0uw8h44pb_uabpwc.jpg" alt="">
+                    <h3>운동지식인 - 헬스 다이어트 운동 정보 나눔</h3>
                     <p>
-                        <span>크로키하는 사람들 모임</span>
-                        <span>멤버 207·리더 박수현 판교76년</span>
-                        <span>크로키 인증 밴드 더보기</span>
-                    </p> 
-                </li>
-                <li class="main-contents">
-                    <a href=""><img src="" alt="">
-                    <h3>오늘의 크로키</h3>
-                    <p>
-                        <span>크로키하는 사람들 모임</span>
-                        <span>멤버 207·리더 박수현 판교76년</span>
-                        <span>크로키 인증 밴드 더보기</span>
-                    </p> 
-                </li>
-                <li class="main-contents">
-                    <a href=""><img src="" alt="">
-                    <h3>오늘의 크로키</h3>
-                    <p>
-                        <span>크로키하는 사람들 모임</span>
-                        <span>멤버 207·리더 박수현 판교76년</span>
-                        <span>크로키 인증 밴드 더보기</span>
-                    </p> 
-                </li>
-                <li class="main-contents">
-                    <a href=""><img src="" alt="">
-                    <h3>오늘의 크로키</h3>
-                    <p>
-                        <span>크로키하는 사람들 모임</span>
-                        <span>멤버 207·리더 박수현 판교76년</span>
-                        <span>크로키 인증 밴드 더보기</span>
-                    </p> 
-                </li>
-                <li class="main-contents">
-                    <a href=""><img src="" alt="">
-                    <h3>오늘의 크로키</h3>
-                    <p>
-                        <span>크로키하는 사람들 모임</span>
-                        <span>멤버 207·리더 박수현 판교76년</span>
-                        <span>크로키 인증 밴드 더보기</span>
-                    </p> 
-                </li>
-                <li class="main-contents">
-                    <a href=""><img src="" alt="">
-                    <h3>오늘의 크로키</h3>
-                    <p>
-                        <span>크로키하는 사람들 모임</span>
-                        <span>멤버 207·리더 박수현 판교76년</span>
-                        <span>크로키 인증 밴드 더보기</span>
-                    </p> 
-                </li>
-                <li class="main-contents">
-                    <a href=""><img src="" alt="">
-                    <h3>오늘의 크로키</h3>
-                    <p>
-                        <span>크로키하는 사람들 모임</span>
-                        <span>멤버 207·리더 박수현 판교76년</span>
-                        <span>크로키 인증 밴드 더보기</span>
-                    </p> 
-                </li>
-                <li class="main-contents">
-                    <a href=""><img src="" alt="">
-                    <h3>오늘의 크로키</h3>
-                    <p>
-                        <span>크로키하는 사람들 모임</span>
-                        <span>멤버 207·리더 박수현 판교76년</span>
-                        <span>크로키 인증 밴드 더보기</span>
+                        <span>
+                            헬스/다이어트/운동에 관한 질문 답변, 운동 노하우 정보 공유 그룹입니다. 헬스 다이어트로 여러분의 인생을 바꾸세요~
+                        </span>
+                        <span>멤버 20,038 리더 리더</span>
+                        <span>운동정보 밴드 더보기</span>
                     </p> 
                 </li>
             </ul>
@@ -154,8 +339,8 @@
             <img src="" alt="">
             <div class="apps-text">
             <h3>밴드앱을 다운로드 하세요!</h3><p>당신의 모임도 BAND로 시작하세요.</p></div>
-            <a href=""><img src="" alt=""></a>
-            <a href=""><img src="" alt=""></a>
+            <a href="#"><img src="../" alt=""></a>
+            <a href="#"><img src="" alt=""></a>
         </div>
     </main>
     <footer>
