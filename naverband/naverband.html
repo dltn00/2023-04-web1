@@ -10,6 +10,9 @@
             margin: 0;
             padding: 0;
         }
+        :root{
+            --main--color:  rgb(64 165 64 );
+        }
         header{
             width: 100%;
             padding: 32px;
@@ -38,7 +41,7 @@
         .header-contents-login{
             width: 90px;
             height: 36px;
-            background-color: rgb(75, 196, 75);
+            background-color: var(--main--color);
             margin-right: 50px;
             text-align: center;
             display: flex;
@@ -95,7 +98,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: rgb(75, 196, 75);
+            background-color: var(--main--color);
             color: white;
             border: 1px solid rgb(238, 235, 235);
             
@@ -116,10 +119,10 @@
             margin-top: 24px;
         }
         .band-list-a{
-            color: rgb(75, 196, 75);
+            color: var(--main--color);
             text-decoration: underline;
         }
-        .banner-container{
+        .intro-container{
             height: 540px;
             background-image: url(../naverband/img/bg_intro.jpg);
             background-position: center;
@@ -133,7 +136,7 @@
             text-align: center;
             gap: 8px;
         }
-        .banner-h2{
+        .intro-h2{
             font-size: 40px;
         }
         .main-contents-container{
@@ -232,8 +235,14 @@
         }
         .footer-contents-list{
             display: flex;
-            gap: 24px;
+            flex-wrap: wrap;
+            line-height: 24px;
+            list-style: armenian;
             
+            
+        }
+        .footer-contents-list>a{
+            color: #AAA;
         }
 
     </style>
@@ -264,8 +273,8 @@
                 </ul>
             </div>
         </section>
-        <section class="banner-container">
-            <h2 class="banner-h2">모임을 위한 공간, 밴드</h2><br>
+        <section class="intro-container">
+            <h2 class="intro-h2">모임을 위한 공간, 밴드</h2><br>
             <p>밴드는 그룹 멤버와 함께 하는 공간입니다. <br>동호회, 스터티, 주제별 모임을 밴드로 시작하세요.</p>
         </section>
             
@@ -410,7 +419,6 @@
 
                             <h3>인물스케치</h3>
                             <p>
-                    
                         <span>
                             예술을 사랑하는분과
                             그림그리기를 좋아하는분들이
@@ -469,7 +477,7 @@
     <footer>
         <div class="footer-container"> 
             <ul class="footer-contents-list">
-                <li class="footer-contents"><a href="">블로그</a></li>
+                <li class="footer-contents"><a href="">블로그 </a></li>
                 <li class="footer-contents"><a href="">스티커제안</a></li>
                 <li class="footer-contents"><a href="">광고</a></li>
                 <li class="footer-contents"><a href="">이용약관</a></li>
