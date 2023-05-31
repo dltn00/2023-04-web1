@@ -12,16 +12,16 @@
         }
         header{
             width: 100%;
-            padding: 20px;
+            padding: 32px;
             display: flex;
             justify-content: space-between;
             padding-top: 16px;
             background-color: #f6f8fa;
         }
         .logo{
-            font-size: 20px;
-            border-radius: 30px;
-            border: 0.1em solid black;
+            background: url('img/spr_intro.png') no-repeat 0 -98px;
+            width: 78px;
+            height: 29px;
             padding: 0 6px;
             
         }
@@ -32,7 +32,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 36px; 
+            gap: 48px; 
             font-size: 14px;
         }
         .header-contents-login{
@@ -57,6 +57,7 @@
         }
         a{
             text-decoration: none;
+            color: black;
         }
         .main-container{
             background-color: #f6f8fa;
@@ -77,7 +78,7 @@
         }
         h2{
             font-size: 48px;
-            font-weight:    500;
+            font-weight:  500;
         }
         .login-box{
             display: flex;
@@ -146,7 +147,7 @@
             
         }
         .main-contents{
-            width: 300px;
+            width: 500px;
             height: 160px;
             
         }
@@ -154,21 +155,92 @@
             width: 300px;
             height: 160px;
         }
-        .main-contents>h3{
+        .main-contents>h3{   
             font-size: 24px;
             font-weight: 500;
             padding-top: 12px;
+        
         }
         .main-contents>p{
             font-size: 15px;
             line-height: 24px;
         }
-        
+        .main-contents-box{
+            width: 1000px;
+            margin: 0 auto;
+            margin-top: 230px;    
+        }
+        .main-contents-text{
+            display: flex;
+            justify-content: space-between; 
+            margin-bottom: 24px;
+        }
+        .main-text-h3{
+            font-size: 24px;
+            font-weight: 500;
+        }
+        .main-contents-list{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .main-contents-img{
+            width: 100px;
+            height: 100px;
+            border-radius: 18px;
+        }
+        .contents-information{
+            width: 500px;
+            height: 160px;
+        }
+
+        .main-app-download{
+            display: flex;
+            justify-content: center
+        }
+        .imglogo {
+            background: url('img/spr_intro.png') no-repeat -162px 0;
+            width: 70px;
+            height: 70px;
+        }
+        .googlerplay{
+            background: url('img/spr_intro.png') no-repeat 0 0;
+            width: 160px;
+            height: 47px;
+        }
+        .appstore{
+            background: url('img/spr_intro.png') no-repeat 0 -49px;
+            width: 160px;
+            height: 47px;
+        }
+
+
+
+
+
+
+        footer{
+            background-color: rgb(71, 69, 77);
+            height: 150px;
+            
+        }
+        .footer-container{
+            width: 1000px;
+            margin: 0 auto;
+            
+       
+        }
+        .footer-contents-list{
+            display: flex;
+            gap: 24px;
+            
+        }
+
     </style>
 </head>
 <body>
     <header>
-        <h1 class="logo"><a href="">BAND</a></h1>
+        <a href=""><div class="logo"></div></a>
         <ul class="header-contents-list">
             <li class="header-contents"><a href="">한국어 ▾</a></li>
             <li class="header-contents"><a href="">회원가입</a></li>
@@ -183,12 +255,12 @@
                 <h2>모임이 쉬워진다!<br>우리끼리 밴드</h2><br>
                 <p>당신의 모임도 Band로 시작하세요.</p>
                 <div class="login-box">
-                    <a href="#" class="main-login">로그인</a>
-                    <a href="#" class="main-sign">회원가입</a></div>
+                    <a href="" class="main-login">로그인</a>
+                    <a href="" class="main-sign">회원가입</a></div>
                 <ul class="band-wrapper">
-                    <li class="main-band-list">내게 맞는 밴드를 만나려면 <a href="#" class="band-list-a">밴드 찾기</a></li>
-                    <li class="main-band-list">모임별 밴드 활용법 <a href="#" class="band-list-a">밴드 가이드 보기</a></li>
-                    <li class="main-band-list">만 13세 미만이라면? <a href="#" class="band-list-a">'밴드 키즈'알아보기</a></li>
+                    <li class="main-band-list">내게 맞는 밴드를 만나려면 <a href="" class="band-list-a">밴드 찾기</a></li>
+                    <li class="main-band-list">모임별 밴드 활용법 <a href="" class="band-list-a">밴드 가이드 보기</a></li>
+                    <li class="main-band-list">만 13세 미만이라면? <a href="" class="band-list-a">'밴드 키즈'알아보기</a></li>
                 </ul>
             </div>
         </section>
@@ -211,15 +283,19 @@
                 <h3>내가 원하는 모임 찾기</h3><br><p>취미, 스포츠, 또래 모임 등 나와 같은관심사 밴드를 찾을 수 있어요.</p>
             </div>
         </section>
-        <section class="main-contents-wrapper">
+        <section class="main-contents-box">
             <div class="main-contents-text">
-            <h3>이런 밴드는 어때요</h3><a href="#">모두보기</a>
+            <h3 class="main-text-h3">이런 밴드는 어때요</h3><a href="">모두보기</a>
             </div>
-            <ul class="maind-contents-list">
+            <ul class="main-contents-list">
                 <li class="main-contents">
-                    <a href="#"><img src="../naverband/img/1_87bUd018svc7ej9is8u4b2f_eky5eu.jpg" alt="">
-                    <h3>실내 대형견 극복기! 그레이트 피레니즈&골든 리트리버</h3>
-                    <p>
+                    <a href="">
+                        <img src="..//naverband/img/1_87bUd018svc7ej9is8u4b2f_eky5eu.jpg" alt="" class="main-contents-img" >
+                        <div class="contents-information">
+
+                            <h3>실내 대형견 극복기! 그레이트 피레니즈&골든 리트리버</h3>
+                            <p>
+                    
                         <span>
                             실내 대형견 극복기!
                             그레이트피레니즈&골든 리트리버가 함께 자라가는 이야기~~퓨어와 엘리의
@@ -229,11 +305,16 @@
                         <span>멤버 975 리더 엘리&퓨어/엘퓨맘(일산)</span>
                         <span>대형견 사랑 밴드 더보기</span>
                     </p> 
+                    </div>
                 </li>
                 <li class="main-contents">
-                    <a href="#"><img src="../naverband/img/0_b22Ud018svcuq6a3go7pim7_kiomv.jpg" alt="">
-                    <h3>향기있는 삶</h3>
-                    <p>
+                    <a href="">
+                        <img src="../naverband/img/0_b22Ud018svcuq6a3go7pim7_kiomv.jpg" alt="" class="main-contents-img">
+                        <div class="contents-information">
+
+                            <h3>향기있는 삶</h3>
+                            <p>
+                    
                         <span>
                             향기있는 삶을 시작하려 합니다
                             아름다운 삶을 함께 나누실래요?
@@ -241,11 +322,16 @@
                         <span>멤버 1,739 리더 아카시아</span>
                         <span>소통 밴드 더보기</span>
                     </p> 
+                    </div>
                 </li>
                 <li class="main-contents">
-                    <a href="#"><img src="../naverband/img/7_df4Ud018svca4zcy7klf575_mylz2j.jpg" alt="">
-                    <h3>나를 살리는 한줄 명언</h3>
-                    <p>
+                    <a href="">
+                        <img src="../naverband/img/7_df4Ud018svca4zcy7klf575_mylz2j.jpg" alt="" class="main-contents-img">
+                        <div class="contents-information">
+
+                            <h3>나를 살리는 한줄 명언</h3>
+                            <p>
+                    
                         <span>
                             짧은 명언을 통해 생각과 삶이 바뀌어 행복을 주는 밴드
                             (서울 마포 2년제 학력인정 주부학교 일성여자중고등학교 한문교사)
@@ -253,11 +339,16 @@
                         <span>멤버 7,238 리더 명언향기</span>
                         <span>명언 밴드 더보기</span>
                     </p> 
+                    </div>
                 </li>
                 <li class="main-contents">
-                    <a href="#"><img src="../naverband/img/3_af9Ud018svcrpyub182uzl5_kp64f6.jpg" alt="">
-                    <h3>젠탱글</h3>
-                    <p>
+                    <a href="">
+                        <img src="../naverband/img/3_af9Ud018svcrpyub182uzl5_kp64f6.jpg" alt="" class="main-contents-img">
+                        <div class="contents-information">
+
+                            <h3>젠탱글</h3>
+                            <p>
+                    
                         <span>패턴만으로
                             나만의작품을 그리고
                             행복해지는 젠탱글
@@ -265,41 +356,61 @@
                         <span>멤버 810 리더 박수아(인천)</span>
                         <span>젠탱글 밴드 더보기</span>
                     </p> 
+                    </div>
                 </li>
                 <li class="main-contents">
-                    <a href="#"><img src="../naverband/img/eb2Ud015dx5nr1cd29q1_ektqox.jpg" alt="">
-                    <h3>굿모닝 베트남</h3>
-                    <p>
+                    <a href="">
+                        <img src="../naverband/img/eb2Ud015dx5nr1cd29q1_ektqox.jpg" alt="" class="main-contents-img">
+                        <div class="contents-information">
+
+                            <h3>굿모닝 베트남</h3>
+                            <p>
+                    
                         <span>
                             굿모닝베트남은 베트남 여행 정보를 기본적으로 하며 국내 및 해외 타 국가의 여행정보만 을 공유하는 여행정보 밴드입니다
                         </span>
                         <span>멤버 17,710 리더 신짜오</span>
                         <span>해외여행 밴드 더보기</span>
                     </p> 
+                    </div>
                 </li>
                 <li class="main-contents">
-                    <a href="#"><img src="../naverband/img/i_4d8Ud018svc1o0c4059l68nw_rid19j.jpg" alt="">
-                    <h3>그림 솜씨 자랑하기</h3>
-                    <p>
+                    <a href="">
+                        <img src="../naverband/img/i_4d8Ud018svc1o0c4059l68nw_rid19j.jpg" alt="" class="main-contents-img">
+                        <div class="contents-information">
+
+                            <h3>그림 솜씨 자랑하기</h3>
+                            <p>
+                    
                         <span>멤버 98 리더 (EC런트)</span>
                         <span>그림솜씨 밴드 더보기</span>
                     </p> 
+                    </div>
                 </li>
                 <li class="main-contents">
-                    <a href="#"><img src="../naverband/img/d_5e7Ud018svc1wnxpp3oh8qhp_u8z9gk.jpg" alt="">
-                    <h3>마음밭수채화세상</h3>
-                    <p>
+                    <a href="">
+                        <img src="../naverband/img/d_5e7Ud018svc1wnxpp3oh8qhp_u8z9gk.jpg" alt="" class="main-contents-img">
+                        <div class="contents-information">
+
+                            <h3>마음밭수채화세상</h3>
+                            <p>
+                    
                         <span>
                             누구나 그림을사랑하는 분들이 이끌어주며 마음을나눌수 있는 자리를 만들었습니다 ᆞ(수채화ᆞ유화ᆞ인물화ᆞ어반스케치 ᆞ등)
                         </span>
                         <span>멤버 2,133 리더 장애정 서울</span>
                         <span>수채화 밴드 더보기</span>
                     </p> 
+                    </div>
                 </li>
                 <li class="main-contents">
-                    <a href="#"><img src="../naverband/img/d_4chUd018svcff1ksxx8xrkl_281lrf.jpg" alt="">
-                    <h3>인물스케치</h3>
-                    <p>
+                    <a href="">
+                        <img src="../naverband/img/d_4chUd018svcff1ksxx8xrkl_281lrf.jpg" alt="" class="main-contents-img">
+                        <div class="contents-information">
+
+                            <h3>인물스케치</h3>
+                            <p>
+                    
                         <span>
                             예술을 사랑하는분과
                             그림그리기를 좋아하는분들이
@@ -310,58 +421,68 @@
                         <span>멤버 234 리더 권동하 경기분당 남</span>
                         <span>크로키 인증 밴드 더보기</span>
                     </p> 
+                    </div>
                 </li>
                 <li class="main-contents">
-                    <a href="#"><img src="../naverband/img/i_37aUd018svcmo6d2d978sa7_1l2kd7.jpg" alt="">
-                    <h3>어썸드로잉스쿨 _드로잉과 어반스케치</h3>
-                    <p>
+                    <a href="">
+                        <img src="../naverband/img/i_37aUd018svcmo6d2d978sa7_1l2kd7.jpg" alt="" class="main-contents-img">
+                        <div class="contents-information">
+
+                            <h3>어썸드로잉스쿨 _드로잉과 어반스케치</h3>
+                            <p>
+                    
                         <span>
                             여행드로잉과 어반스케치를 주제로 다양한 정보를 나누는 커뮤니티입니다. 세계속의 스케쳐들을 소개하고 드로잉작가와 함께 그림에 대해 소통하는 공간입니다.
                         </span>
                         <span>멤버 1,093 리더 Sangjin Lee</span>
                         <span>드로잉 인증 밴드 더보기</span>
                     </p> 
+                    </div>
                 </li>
                 <li class="main-contents">
-                    <a href="#"><img src="../naverband/img/0_cfbUd018svc1sia0uw8h44pb_uabpwc.jpg" alt="">
-                    <h3>운동지식인 - 헬스 다이어트 운동 정보 나눔</h3>
-                    <p>
+                    <a href="">
+                        <img src="../naverband/img/0_cfbUd018svc1sia0uw8h44pb_uabpwc.jpg" alt="" class="main-contents-img">
+                        <div class="contents-information">
+
+                            <h3>운동지식인 - 헬스 다이어트 운동 정보 나눔</h3>
+                            <p>
+                    
                         <span>
                             헬스/다이어트/운동에 관한 질문 답변, 운동 노하우 정보 공유 그룹입니다. 헬스 다이어트로 여러분의 인생을 바꾸세요~
                         </span>
                         <span>멤버 20,038 리더 리더</span>
                         <span>운동정보 밴드 더보기</span>
                     </p> 
+                    </div>
                 </li>
             </ul>
         </section>
         <div class="main-app-download">
             <img src="" alt="">
             <div class="apps-text">
-            <h3>밴드앱을 다운로드 하세요!</h3><p>당신의 모임도 BAND로 시작하세요.</p></div>
-            <a href="#"><img src="../" alt=""></a>
-            <a href="#"><img src="" alt=""></a>
+                <div class="imglogo-box"><a href="" ><div class="imglogo"></div></a></div>
+                <h3>밴드앱을 다운로드 하세요!</h3><p>당신의 모임도 BAND로 시작하세요.</p></div>
+                <a href="" class="googlerplay"></a>
+                <a href="" class="appstore"></a>
         </div>
     </main>
     <footer>
-        <div class="footer-container">
-            <div class="footer-wrapper">
-                <ul class="footer-contents-list">
-                    <li class="footer-contents"><a href="#">블로그</a></li>
-                    <li class="footer-contents"><a href="#">스티커제안</a></li>
-                    <li class="footer-contents"><a href="#">광고</a></li>
-                    <li class="footer-contents"><a href="#">이용약관</a></li>
-                    <li class="footer-contents"><a href="#">개인정보처리방침</a></li>
-                    <li class="footer-contents"><a href="#">쿠키 설정</a></li>
-                    <li class="footer-contents"><a href="#">CCPA 개인 정보 관리</a></li>
-                    <li class="footer-contents"><a href="#">청소년 보호를 위한 노력</a></li>
-                    <li class="footer-contents"><a href="#">활동정책</a></li>
-                    <li class="footer-contents"><a href="#">권리침해 신고안내</a></li>
-                    <li class="footer-contents"><a href="#">개발자</a></li>
-                    <li class="footer-contents"><a href="#">도움말</a></li>
-                </ul>
-                <p class="copyright">BAND&copy;2023</p>
-            </div>
+        <div class="footer-container"> 
+            <ul class="footer-contents-list">
+                <li class="footer-contents"><a href="">블로그</a></li>
+                <li class="footer-contents"><a href="">스티커제안</a></li>
+                <li class="footer-contents"><a href="">광고</a></li>
+                <li class="footer-contents"><a href="">이용약관</a></li>
+                <li class="footer-contents"><a href="">개인정보처리방침</a></li>
+                <li class="footer-contents"><a href="">쿠키 설정</a></li>
+                <li class="footer-contents"><a href="">CCPA 개인 정보 관리</a></li>
+                <li class="footer-contents"><a href="">청소년 보호를 위한 노력</a></li>
+                <li class="footer-contents"><a href="">활동정책</a></li>
+                <li class="footer-contents"><a href="">권리침해 신고안내</a></li>
+                <li class="footer-contents"><a href="">개발자</a></li>
+                <li class="footer-contents"><a href="">도움말</a></li>
+            </ul>
+            <p class="copyright">BAND&copy;2023</p>
         </div>
     </footer>    
 </body>
