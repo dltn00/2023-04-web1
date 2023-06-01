@@ -35,7 +35,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 48px; 
+            gap: 30px; 
             font-size: 14px;
         }
         .header-contents-login{
@@ -196,20 +196,47 @@
             width: 500px;
             height: 160px;
         }
-
         .main-app-download{
+            width: 1000px;
+           padding-top: 64px;
             display: flex;
-            justify-content: center
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin: 0 auto;
+            
+            
+        }
+        .apps-container{
+            display: flex;
+
+        }
+        .apps-text-wrapper{
+            width: 400px;
+            padding-right: 320px;
+            line-height: 28px;
+            padding-top: px;
+        }
+        .band-app-h3{
+            font-size: 24px;
+            font-weight: 500;
+        }
+        .band-app-p{
+            font-size: 14px;
         }
         .imglogo {
             background: url('img/spr_intro.png') no-repeat -162px 0;
             width: 70px;
             height: 70px;
+            padding-right: 24px;
+            
         }
         .googlerplay{
             background: url('img/spr_intro.png') no-repeat 0 0;
             width: 160px;
             height: 47px;
+            
+            
         }
         .appstore{
             background: url('img/spr_intro.png') no-repeat 0 -49px;
@@ -217,14 +244,9 @@
             height: 47px;
         }
 
-
-
-
-
-
         footer{
             background-color: rgb(71, 69, 77);
-            height: 150px;
+            height: 130px;
             
         }
         .footer-container{
@@ -236,13 +258,19 @@
         .footer-contents-list{
             display: flex;
             flex-wrap: wrap;
-            line-height: 24px;
-            list-style: armenian;
-            
+            gap: 24px;
+            padding-top: 24px;
+            font-size: 14px;
             
         }
-        .footer-contents-list>a{
-            color: #AAA;
+        .footer-contents>a{
+            color: gray;
+            
+        }
+        .copyright{
+            padding-top: 8px;
+            color: rgb(204, 198, 198);
+            font-size: 14px;
         }
 
     </style>
@@ -432,7 +460,7 @@
                     </div>
                 </li>
                 <li class="main-contents">
-                    <a href="">
+                    <a href="#">
                         <img src="../naverband/img/i_37aUd018svcmo6d2d978sa7_1l2kd7.jpg" alt="" class="main-contents-img">
                         <div class="contents-information">
 
@@ -466,12 +494,14 @@
             </ul>
         </section>
         <div class="main-app-download">
-            <img src="" alt="">
-            <div class="apps-text">
+            <div class="apps-container">
                 <div class="imglogo-box"><a href="" ><div class="imglogo"></div></a></div>
-                <h3>밴드앱을 다운로드 하세요!</h3><p>당신의 모임도 BAND로 시작하세요.</p></div>
-                <a href="" class="googlerplay"></a>
-                <a href="" class="appstore"></a>
+                <div class="apps-text-wrapper">
+                    <h3 class="band-app-h3">밴드앱을 다운로드 하세요!</h3>
+                    <p class="band-app-p">당신의 모임도 BAND로 시작하세요.</p>
+                </div>
+                <a href="#" class="googlerplay"></a>
+                <a href="#" class="appstore"></a>
         </div>
     </main>
     <footer>
