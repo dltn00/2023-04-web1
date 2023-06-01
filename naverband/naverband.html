@@ -35,9 +35,23 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 30px; 
+            gap: 24px; 
             font-size: 14px;
         }
+        .float{
+            border: 4px solid gray;
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+            border-bottom: none;
+            position: relative;
+            left: -20px;
+        }
+        .float-button:focus{
+            width: 100px;
+            height: 200px;
+            background-color: white;
+        }
+        
         .header-contents-login{
             width: 90px;
             height: 36px;
@@ -70,11 +84,11 @@
             align-items: center;
         }
         .phone{
-            width: 540px;
+            width: 500px;
             height: 694px;
             background-image: url(../naverband/img/bg_sloganImg.jpg);
             background-position: center;
-            background-size: 540px 694px;
+            background-size: cover;
         }
         .main-wrapper{
             padding-left: 48px;
@@ -151,7 +165,8 @@
         }
         .main-contents{
             width: 500px;
-            height: 160px;
+            height: 100px;
+            margin-bottom: 36px;
             
         }
         .main-img{
@@ -164,9 +179,17 @@
             padding-top: 12px;
         
         }
-        .main-contents>p{
-            font-size: 15px;
-            line-height: 24px;
+        .main-contents>a{
+            display: flex;
+        }
+        .contents-information>h3{
+            font-size: 14px;
+        }
+        .contents-information>p{
+            font-size: 12px;    
+        }
+        .member{
+            color: gray;
         }
         .main-contents-box{
             width: 1000px;
@@ -194,32 +217,37 @@
         }
         .contents-information{
             width: 500px;
-            height: 160px;
+            margin-left: 12px;
+            line-height: 24px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
         }
         .main-app-download{
             width: 1000px;
-           padding-top: 64px;
+            padding-top: 64px;
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 12px;
             margin: 0 auto;
-            
-            
+
         }
         .apps-container{
             display: flex;
+            gap: 12px;
 
         }
         .apps-text-wrapper{
             width: 400px;
-            padding-right: 320px;
+            padding-right: 174px;
             line-height: 28px;
-            padding-top: px;
+            
         }
         .band-app-h3{
             font-size: 24px;
             font-weight: 500;
+            padding-top: 12px;
         }
         .band-app-p{
             font-size: 14px;
@@ -228,7 +256,7 @@
             background: url('img/spr_intro.png') no-repeat -162px 0;
             width: 70px;
             height: 70px;
-            padding-right: 24px;
+            padding-right: 12px;
             
         }
         .googlerplay{
@@ -245,30 +273,31 @@
         }
 
         footer{
-            background-color: rgb(71, 69, 77);
-            height: 130px;
+            background-color: rgb(25, 25, 31);
+            height: 120px;
+            margin-top: 28px;
             
         }
         .footer-container{
             width: 1000px;
             margin: 0 auto;
-            
        
         }
         .footer-contents-list{
             display: flex;
             flex-wrap: wrap;
-            gap: 24px;
+            line-height: 0;
+            gap: 28px;
             padding-top: 24px;
-            font-size: 14px;
-            
+        
         }
         .footer-contents>a{
             color: gray;
+            font-size: 13px;
             
         }
         .copyright{
-            padding-top: 8px;
+            padding-top: 16px;
             color: rgb(204, 198, 198);
             font-size: 14px;
         }
@@ -279,7 +308,8 @@
     <header>
         <a href=""><div class="logo"></div></a>
         <ul class="header-contents-list">
-            <li class="header-contents"><a href="">한국어 ▾</a></li>
+            <li class="header-contents"><a href="#" class="float-button">한국어</li> 
+            <div class="float"></div></a>
             <li class="header-contents"><a href="">회원가입</a></li>
             <li class="header-contents-login"><a href="">로그인</a></li>
         </ul>
@@ -338,8 +368,8 @@
                             그레이트피레니즈&골든 리트리버가 함께 자라가는 이야기~~퓨어와 엘리의
                             모든 일상을 추억으로 남기며 ~
                             많은 분들과 아이들의 예쁜모습~ 함께 나누고 싶네요!
-                        </span>
-                        <span>멤버 975 리더 엘리&퓨어/엘퓨맘(일산)</span>
+                        </span><br>
+                        <span class="member">멤버 975 리더 엘리&퓨어/엘퓨맘(일산)</span><br>
                         <span>대형견 사랑 밴드 더보기</span>
                     </p> 
                     </div>
@@ -355,8 +385,8 @@
                         <span>
                             향기있는 삶을 시작하려 합니다
                             아름다운 삶을 함께 나누실래요?
-                        </span>
-                        <span>멤버 1,739 리더 아카시아</span>
+                        </span><br>
+                        <span class="member">멤버 1,739 리더 아카시아</span><br>
                         <span>소통 밴드 더보기</span>
                     </p> 
                     </div>
@@ -372,10 +402,10 @@
                         <span>
                             짧은 명언을 통해 생각과 삶이 바뀌어 행복을 주는 밴드
                             (서울 마포 2년제 학력인정 주부학교 일성여자중고등학교 한문교사)
-                        </span>
-                        <span>멤버 7,238 리더 명언향기</span>
-                        <span>명언 밴드 더보기</span>
-                    </p> 
+                        </span><br>
+                        <span class="member">멤버 7,238 리더 명언향기</span><br>
+                        <span>명언 밴드 더보기</span>  
+                        </p> 
                     </div>
                 </li>
                 <li class="main-contents">
@@ -389,10 +419,9 @@
                         <span>패턴만으로
                             나만의작품을 그리고
                             행복해지는 젠탱글
-                            함께해요</span>
-                        <span>멤버 810 리더 박수아(인천)</span>
-                        <span>젠탱글 밴드 더보기</span>
-                    </p> 
+                            함께해요</span><br>
+                        <span class="member">멤버 810 리더 박수아(인천)</span><br>
+                        <span>젠탱글 밴드 더보기</span>                    </p> 
                     </div>
                 </li>
                 <li class="main-contents">
@@ -405,8 +434,8 @@
                     
                         <span>
                             굿모닝베트남은 베트남 여행 정보를 기본적으로 하며 국내 및 해외 타 국가의 여행정보만 을 공유하는 여행정보 밴드입니다
-                        </span>
-                        <span>멤버 17,710 리더 신짜오</span>
+                        </span><br>
+                        <span class="member">멤버 17,710 리더 신짜오</span><br>
                         <span>해외여행 밴드 더보기</span>
                     </p> 
                     </div>
@@ -419,7 +448,7 @@
                             <h3>그림 솜씨 자랑하기</h3>
                             <p>
                     
-                        <span>멤버 98 리더 (EC런트)</span>
+                        <span class="member">멤버 98 리더 (EC런트)</span><br>
                         <span>그림솜씨 밴드 더보기</span>
                     </p> 
                     </div>
@@ -431,13 +460,11 @@
 
                             <h3>마음밭수채화세상</h3>
                             <p>
-                    
-                        <span>
-                            누구나 그림을사랑하는 분들이 이끌어주며 마음을나눌수 있는 자리를 만들었습니다 ᆞ(수채화ᆞ유화ᆞ인물화ᆞ어반스케치 ᆞ등)
-                        </span>
-                        <span>멤버 2,133 리더 장애정 서울</span>
-                        <span>수채화 밴드 더보기</span>
-                    </p> 
+                            <span>누구나 그림을사랑하는 분들이 이끌어주며 마음을나눌수 있는 자리를 만들었습니다 ᆞ(수채화ᆞ유화ᆞ인물화ᆞ어반스케치 ᆞ등)
+                            </span><br>
+                            <span class="member">멤버 2,133 리더 장애정 서울</span><br>
+                            <span>수채화 밴드 더보기</span> 
+                            </p> 
                     </div>
                 </li>
                 <li class="main-contents">
@@ -453,8 +480,8 @@
                             모여서 함께공유하고 즐기는
                             취미공간입니다
                             
-                        </span>
-                        <span>멤버 234 리더 권동하 경기분당 남</span>
+                        </span><br>
+                        <span class="member">멤버 234 리더 권동하 경기분당 남</span><br>
                         <span>크로키 인증 밴드 더보기</span>
                     </p> 
                     </div>
@@ -469,8 +496,8 @@
                     
                         <span>
                             여행드로잉과 어반스케치를 주제로 다양한 정보를 나누는 커뮤니티입니다. 세계속의 스케쳐들을 소개하고 드로잉작가와 함께 그림에 대해 소통하는 공간입니다.
-                        </span>
-                        <span>멤버 1,093 리더 Sangjin Lee</span>
+                        </span><br>
+                        <span class="member">멤버 1,093 리더 Sangjin Lee</span><br>
                         <span>드로잉 인증 밴드 더보기</span>
                     </p> 
                     </div>
@@ -485,8 +512,8 @@
                     
                         <span>
                             헬스/다이어트/운동에 관한 질문 답변, 운동 노하우 정보 공유 그룹입니다. 헬스 다이어트로 여러분의 인생을 바꾸세요~
-                        </span>
-                        <span>멤버 20,038 리더 리더</span>
+                        </span><br>
+                        <span class="member">멤버 20,038 리더 리더</span><br>
                         <span>운동정보 밴드 더보기</span>
                     </p> 
                     </div>
@@ -508,6 +535,7 @@
         <div class="footer-container"> 
             <ul class="footer-contents-list">
                 <li class="footer-contents"><a href="">블로그 </a></li>
+                <li class="footer-contents"><a href="">공지사항 </a></li>
                 <li class="footer-contents"><a href="">스티커제안</a></li>
                 <li class="footer-contents"><a href="">광고</a></li>
                 <li class="footer-contents"><a href="">이용약관</a></li>
