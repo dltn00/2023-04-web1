@@ -10,56 +10,155 @@
             margin: 0;
             padding: 0;
         }
-        
+        #header-box{
+            width: 100%;
+            height: 1000px;
+            background-image: url(./main_visual_fullscreen.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .header-container{
+            position: relative;
+            height: 60px;
+        }
+        .logo{
+            position: absolute;
+            width: 112px;
+            top: 50%;
+            left: 40px;
+            transform: translate(0, -50%);
+        }
+        #hambuger{
+            width: 36px;
+            height: 14px;
+            position: absolute;
+            top: 3%;
+            right: 40px;
+            
+        }
+        #hambuger>span{
+            width: 26px;
+            height: 3px;
+            background-color: white;
+            position: absolute;    
+        }
+        .cth{
+            transform: translate(0, -50%);
+        }
+        .hambuger-2th{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        h1{
+            max-width: 768px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-size: 48pt;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+        }
+        #main-intro-container{
+            padding-bottom: 150px;
+        }
+        .main-intro{
+            width: 800px;
+            height: auto;
+            margin: 0 auto;
+            margin-top: 100px;
+            position: relative;
+
+        }
+        .main-intro-wrapper{
+            margin-bottom: 1000px;
+        }
+        .main-intro>img{
+            width: 800px;
+            height: 600px;
+            margin-top: 48px;
+        }
+        .main-intro>h2{
+            font-size:  40px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            color: rgb(77, 77, 77);
+        }
+        .main-intro>p{
+            line-height: 24px;
+            font-size: 18px;
+            color: rgb(167, 167, 167);
+            font-weight: bold;
+            margin-top: 24px;
+        }
+        .main-intro>h2::after{
+            content: "";
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #0bb8ff;
+            position: absolute;
+            top: 35px; 
+        }
+        li{
+            list-style: none;
+        }
     </style>
 </head>
 <body>
-    <header>
+    <header> 
         <section id="header-box">
             <div class="header-container">
-                <a href=""><img src="../IMG/logo-w.svg" alt=""></a>
-                <div></div>
+                <a href="" class="logo">
+                    <img src="./logo-w.svg" alt=""></div>
+                </a>
+                <div id="hambuger" class="cth">
+                    <span class="hambuger-1th"></span>
+                    <span class="hambuger-2th"></span>
+                </div>
             </div>
             <h1>차가 필요한 <br>모든 순간,쏘카</h1>
+            
         </section>
     </header>
     <main>
-        <section id="main-intro">
-            <ul class="main-intro-wrapper">
-                <li class="main-intro">
+        <section id="main-intro-container">
+            <div class="main-intro-wrapper">
+                <div class="main-intro">
                     <h2>24시간 언제나</h2>
-                    <div class="round"></div>
+                    <div class="blue-round"></div>
                     <p>한밤중이나 주말에도 스마트폰으로<br>시간에 구애받지 않고<br>쏘카와 함께 이동하세요.</p>
                     <img src="../IMG/usp_a.jpg" alt="">
-                </li>
-                <li class="main-intro">
+                </div>
+                <div class="main-intro">
                     <h2>원하는 곳에서</h2>
-                    <div class="round"></div>
+                    <div class="blue-round"></div>
                     <p>내 주변 3분 거리 쏘카존에서<br>혹은 내가 있는 곳으로 쏘카를 불러<br>어디서나 편하게 출발하세요.</p>
                     <img src="../IMG/usp_b.jpg" alt="">
-                </li>
-                <li class="main-intro">
+                </div>
+                <div class="main-intro">
                     <h2>필요한 시간만큼</h2>
-                    <div class="round"></div>
+                    <div class="blue-round"></div>
                     <p>간단한 장보기부터 주말여행까지<br>10분 단위로 원하는 만큼만 이용하세요.</p>
                     <img src="../IMG/usp_c.jpg" alt="">
-                </li>
-                <li class="main-intro">
+                </div>
+                <div class="main-intro">
                     <h2>다양한 차종을</h2>
-                    <div class="round"></div>
+                    <div class="blue-round"></div>
                     <p>연인과의 드라이브부터 가족 캠핑까지<br>상황에 맞게 50여 종의 차량을<br>선택해서 이용하세요.</p>
                     <img src="../IMG/usp_d.jpg" alt="">
-                </li>
-            </ul>
+                </div>
+            </div>
         </section>
         <section id="main-banner">
-                <ul class="main-banner-wrapper">
+                <div class="main-banner-wrapper">
                     <li>
                         <p>
                         <span class="blue-text">8,796,684</span>명의 회원이 쏘카와 <br>함께하고 있습니다.<br>지금 바로
                         <span class="blue-text">쏘카 드라이브</span>를 시작하세요.</p>
                     </li>
-                </ul>
+                </div>
         </section>
         <section id="main-contents">
             <ul class="main-contents-wrapper">
@@ -75,7 +174,7 @@
     </main>
     <footer>
         <section id="footer-box">
-            <ul class="footer-contents-wrapper">
+            <div class="footer-contents-wrapper">
                 <li class="footer-contents-list"><a href="">회사소개</a></li>
                 <li class="footer-contents-list"><a href="">인재채용</a></li>
                 <li class="footer-contents-list"><a href="">나눔카</a></li>
@@ -85,7 +184,7 @@
                 <li class="footer-contents-list"><a href=""> 차량손해면책제도</a></li>
                 <li class="footer-contents-list"><a href="">고객센터</a></li>
                 <li class="footer-contents-list"><a href="">제휴 문의</a></li>
-            </ul>
+            </div>
             <p class="juso">
                 주소. 제주특별자치도 제주시 연미길 42(오라삼동)<br>
                 전화. 1661-3315 <br>
